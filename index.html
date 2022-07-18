@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <style>
+    :root {
+      font-size: 1.6vw;
+    }
+
+    body {
+      background: rgb(19, 226, 220);
+      background: linear-gradient(
+        90deg,
+        rgba(19, 226, 220, 1) 4%,
+        rgba(120, 100, 193, 1) 45%,
+        rgba(187, 34, 163, 1) 82%
+      );
+      overflow: hidden;
+      margin: 0;
+    }
+
+    h1,
+    p {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      width: 75vw;
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.5em;
+    }
+
+    .mtop {
+      margin-top: 1em;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 0.7em 1.5em;
+      border-radius: 2em;
+      font-weight: bold;
+      background-color: transparent;
+      border: 0.1em solid white;
+      color: white;
+      margin: 0 0.5em;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+
+    .cards-container {
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 10em;
+      height: 9em;
+      background-color: white;
+      border-radius: 1em;
+      color: black;
+      margin: 0 0.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      margin-bottom: 1em;
+      border: solid 0.1em white;
+    }
+
+    .card:hover {
+      background-color: transparent;
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin: 0.3em;
+    }
+
+    @media (orientation: portrait) {
+      :root {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>Design Service</h1>
+      <p class="mtop">
+        Simple text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Architecto deleniti harum quasi quo nostrum repellendus voluptas dicta.
+        Iusto necessitatibus nam facere est eaque, neque, aut officiis,
+        cupiditate quas veniam ad!
+      </p>
+      <div class="btn-container mtop">
+        <button>About Us</button>
+        <button>Out works</button>
+      </div>
+
+      <div class="cards-container mtop">
+        <div class="card">
+          <span class="material-symbols-outlined icon"> home </span>
+          Simple
+        </div>
+        <div class="card">
+          <span class="material-symbols-outlined icon"> toggle_on </span>
+          No Coding
+        </div>
+        <div class="card">
+          <span class="material-symbols-outlined icon">
+            settings_accessibility
+          </span>
+          500 sites
+        </div>
+        <div class="card">
+          <span class="material-symbols-outlined icon"> ios_share </span>
+          Gifts
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
